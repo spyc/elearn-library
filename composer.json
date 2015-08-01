@@ -1,6 +1,7 @@
 {
     "name": "spyc/elearn-library",
     "description": "The SPYC Library package.",
+    "version": "3.0-dev",
     "license": "MIT",
     "require": {
         "hhvm": "~3.6",
@@ -10,7 +11,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Elearn\\Library\\": ""
+            "Elearn\\Library\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
         }
     }
 }

@@ -24,8 +24,7 @@
  * @license  http://opensource.org/licenses/GPL-3.0 GNU General Public License
  */
 
-namespace Elearn\Library;
-
+namespace Elearn\Library\Provider;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -39,14 +38,11 @@ class LibraryServiceProvider extends ServiceProvider
     public function boot()
     {
         if (!$this->app->routesAreCached()) {
-            require __DIR__ . '/routes.php';
+            require __DIR__ . '/../routes.php';
         }
         $this->loadViewsFrom(__DIR__ . '/views', 'library');
         $this->publishes([
-            __DIR__ . '/views' =>  base_path('resources/views/vendor/library'),
-            __DIR__ . '/static/css' => base_path('public/css/library'),
-            __DIR__ . '/static/js' => base_path('public/js/library'),
-            __DIR__ . '/static/images' => base_path('public/images/library')
+            __DIR__ . '/../resources/views' =>  base_path('resources/views/vendor/library')
         ]);
     }
 }
