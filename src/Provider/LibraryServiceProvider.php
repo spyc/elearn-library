@@ -40,7 +40,7 @@ class LibraryServiceProvider extends ServiceProvider
         if (!$this->app->routesAreCached()) {
             require __DIR__ . '/../routes.php';
         }
-        $this->loadViewsFrom(__DIR__ . '/views', 'library');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'library');
         $this->publishes([
             __DIR__ . '/../resources/views' =>  base_path('resources/views/vendor/library')
         ]);
