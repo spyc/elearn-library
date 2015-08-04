@@ -26,12 +26,16 @@
 
 namespace Elearn\Library\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 
 class LibraryController extends Controller
 {
-
-    public function index()
+	/**
+	 * Get the index page.
+	 * 
+	 * @return \Illuminate\View\View
+	 */
+	public function index()
     {
         return view('library::index');
     }
