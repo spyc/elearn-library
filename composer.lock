@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e115ae450e164952ead7a9daab0d8ddb",
+    "hash": "9f8b38ca3016673bccb92290ff845b81",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -130,6 +130,56 @@
             "time": "2014-12-20 21:24:13"
         },
         {
+            "name": "illuminate/auth",
+            "version": "v5.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/auth.git",
+                "reference": "0d30e32573edf5835978232a41d63072341112d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/auth/zipball/0d30e32573edf5835978232a41d63072341112d6",
+                "reference": "0d30e32573edf5835978232a41d63072341112d6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.1.*",
+                "illuminate/http": "5.1.*",
+                "illuminate/session": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "nesbot/carbon": "~1.19",
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "illuminate/console": "Required to use the auth:clear-resets command (5.1.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Auth\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Auth package.",
+            "homepage": "http://laravel.com",
+            "time": "2015-07-13 12:54:01"
+        },
+        {
             "name": "illuminate/container",
             "version": "v5.1.8",
             "source": {
@@ -213,6 +263,65 @@
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
             "time": "2015-07-14 01:36:14"
+        },
+        {
+            "name": "illuminate/database",
+            "version": "v5.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/database.git",
+                "reference": "ad33fd28df334f248b97cd7ffd747b78635ec0c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/ad33fd28df334f248b97cd7ffd747b78635ec0c4",
+                "reference": "ad33fd28df334f248b97cd7ffd747b78635ec0c4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "5.1.*",
+                "illuminate/contracts": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "nesbot/carbon": "~1.19",
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.4).",
+                "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
+                "illuminate/console": "Required to use the database commands (5.1.*).",
+                "illuminate/events": "Required to use the observers with Eloquent (5.1.*).",
+                "illuminate/filesystem": "Required to use the migrations (5.1.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Database\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Database package.",
+            "homepage": "http://laravel.com",
+            "keywords": [
+                "database",
+                "laravel",
+                "orm",
+                "sql"
+            ],
+            "time": "2015-07-20 16:50:34"
         },
         {
             "name": "illuminate/http",
@@ -545,6 +654,48 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "spyc/elearn-model",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spyc/elearn-model.git",
+                "reference": "447c5165db7e03105ed1b2f7d60f6a34f04f7ea1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spyc/elearn-model/zipball/447c5165db7e03105ed1b2f7d60f6a34f04f7ea1",
+                "reference": "447c5165db7e03105ed1b2f7d60f6a34f04f7ea1",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "~3.6",
+                "illuminate/auth": "5.1.*",
+                "illuminate/contracts": "5.1.*",
+                "illuminate/database": "5.1.*",
+                "illuminate/support": "5.1.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Elearn\\Model\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "The SPYC Elearn Model package.",
+            "support": {
+                "source": "https://github.com/spyc/elearn-model/tree/master",
+                "issues": "https://github.com/spyc/elearn-model/issues"
+            },
+            "time": "2015-08-13 12:51:41"
         },
         {
             "name": "symfony/debug",
@@ -982,7 +1133,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "spyc/elearn-model": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
