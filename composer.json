@@ -3,8 +3,15 @@
     "description": "The SPYC Library package.",
     "version": "3.0-dev",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/spyc/elearn-model"
+        }
+    ],
     "require": {
         "hhvm": "~3.6",
+        "spyc/elearn-model": "dev-master",
         "illuminate/contracts": "5.1.*",
         "illuminate/routing": "5.1.*",
         "illuminate/support": "5.1.*"

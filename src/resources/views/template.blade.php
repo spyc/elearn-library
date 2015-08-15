@@ -21,7 +21,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li></li>
+                    <li><a href="{{ route('library.news.index') }}">News</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ route('bug.index') }}">Bug Report</a></li>
