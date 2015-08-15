@@ -30,4 +30,6 @@ Route::group(['prefix' => 'library'], function()
         'as' => 'library.home',
         'uses' => 'Elearn\Library\Controllers\LibraryController@index'
     ]);
+
+    Route::resource('news', 'Elearn\Library\Controllers\NewsController');
 });
