@@ -40,4 +40,9 @@ class LibraryController extends Controller
         return view('library::index');
     }
 
+    public function about()
+    {
+
+    }
+
 }
