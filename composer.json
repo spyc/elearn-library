@@ -11,6 +11,7 @@
     ],
     "require": {
         "hhvm": "~3.6",
+        "elasticsearch/elasticsearch": "~1.0",
         "spyc/elearn-model": "dev-master",
         "illuminate/contracts": "5.1.*",
         "illuminate/routing": "5.1.*",

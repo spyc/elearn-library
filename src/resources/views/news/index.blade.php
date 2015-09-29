@@ -8,6 +8,7 @@
         </div>
     </div>
     <div class="container">
+        {!! $newses->render() !!}
         <table class="table table-responsive table-striped">
             <thead>
                 <tr>
@@ -26,5 +27,6 @@
                 @endforeach
             </tbody>
         </table>
+        {!! $newses->render() !!}
     </div>
 @stop

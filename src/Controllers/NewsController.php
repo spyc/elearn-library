@@ -26,6 +26,7 @@
 
 namespace Elearn\Library\Controllers;
 
+use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Routing\Controller;
 use Elearn\Model\Library\News;
 
