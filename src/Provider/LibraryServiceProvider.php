@@ -41,8 +41,9 @@ class LibraryServiceProvider extends ServiceProvider
             require __DIR__ . '/../routes.php';
         }
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'library');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'library');
         $this->publishes([
             __DIR__ . '/../resources/views' =>  base_path('resources/views/vendor/library')
-        ]);
+        ], 'views');
     }
 }
