@@ -7,12 +7,16 @@
         {
             "type": "vcs",
             "url": "https://github.com/spyc/elearn-model"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/spyc/elearn-foundation"
         }
     ],
     "require": {
         "hhvm": "~3.6",
-        "elasticsearch/elasticsearch": "~1.0",
         "spyc/elearn-model": "dev-master",
+        "spyc/elearn-foundation": "dev-master",
         "illuminate/contracts": "5.1.*",
         "illuminate/routing": "5.1.*",
         "illuminate/support": "5.1.*"

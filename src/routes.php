@@ -33,8 +33,12 @@ Route::group(['prefix' => 'library'], function()
 
     Route::resource('news', 'Elearn\Library\Controllers\NewsController');
 
-    Route::get('/about', [
-        'as' => 'library.about',
-        'uses' => 'Elearn\Library\Controllers\LibraryController@about'
-    ]);
+    Route::group(['prefix' => 'about'], function() {
+
+        Route::get('aim', [
+            'as' => 'library.about.aim',
+            'uses' => 'Elearn\Library\Controllers\IntroController@aim'
+        ]);
+
+    });
 });
